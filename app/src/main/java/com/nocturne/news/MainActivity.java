@@ -17,6 +17,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.widget.LinearLayout;
+import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.wear.remote.interactions.RemoteActivityHelper;
@@ -102,7 +103,10 @@ public final class MainActivity extends Activity {
     }
     private void showHome(int y) {
         selected=null;screen(y);
-        TextView masthead=ui.text(getString(R.string.app_name),13,ReaderUi.WHITE,true);masthead.setLetterSpacing(.02f);masthead.setGravity(Gravity.CENTER);content.addView(masthead);
+        LinearLayout brandHeader=new LinearLayout(this);brandHeader.setGravity(Gravity.CENTER);
+        ImageView brand=new ImageView(this);brand.setImageResource(R.drawable.ic_signalshare_mark);brand.setImportantForAccessibility(View.IMPORTANT_FOR_ACCESSIBILITY_NO);
+        LinearLayout.LayoutParams brandSize=new LinearLayout.LayoutParams(ui.dp(16),ui.dp(16));brandSize.setMarginEnd(ui.dp(4));brandHeader.addView(brand,brandSize);
+        TextView masthead=ui.text(getString(R.string.app_name),13,ReaderUi.WHITE,true);masthead.setLetterSpacing(.02f);masthead.setGravity(Gravity.CENTER);brandHeader.addView(masthead,new LinearLayout.LayoutParams(-2,-2));content.addView(brandHeader);
         ui.gap(content,5);
         status=ui.text("",10,ReaderUi.MUTED,false);status.setId(R.id.reader_status);status.setGravity(Gravity.CENTER);status.setAccessibilityLiveRegion(View.ACCESSIBILITY_LIVE_REGION_POLITE);content.addView(status);updateStatus();
         ui.gap(content,8);

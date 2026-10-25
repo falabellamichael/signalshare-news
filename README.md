@@ -1,3 +1,5 @@
+<img src="branding/signalshare-news-wordmark.svg" width="600" alt="SignalShare News logo">
+
 # SignalShare: News
 
 A high-contrast news bulletin reader for Wear OS, with offline saved stories and a background Google News complication for compatible watchfaces.
@@ -30,6 +32,10 @@ Google News RSS supplies headlines and related coverage, rather than complete pu
 - A connected phone for the Read on phone action, or an installed watch browser for local web links.
 
 The current feed is Canada / English. No account or API key is required.
+
+## Branding
+
+Version 1.2.1 adds an original SignalShare mark: a white S with a pale-blue broadcast accent on a dark background. It is used in the adaptive launcher icon, app header, and the tintable complication icon. Editable SVGs, a wordmark and a 512px square icon are in [branding/](branding/README.md).
 
 ## Build
 

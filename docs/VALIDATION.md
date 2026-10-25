@@ -14,3 +14,11 @@ Verified on 2026-10-25.
 Not verified: paired-phone browser delivery, physical rotation of the hardware bezel, long-duration battery usage, natural timed five-minute rollover and 15-minute refresh intervals. The complication selection logic was exercised with controlled timestamps; the actual RSS fetch ran over HTTPS.
 
 Build output and device-specific debugging credentials are not stored in this repository.
+
+## Version 1.2.1 branding update
+
+- Original vector mark added to the adaptive launcher, application masthead and tintable complication resource.
+- Build and Android lint completed successfully with no lint errors.
+- Version 1.2.1 installed in place on the physical Watch8 Classic; masthead logo inspected on the watch with the compact typography retained.
+- Square and circular logo previews inspected; launcher artwork fits Android's central adaptive-icon safe region. The square PNG export is 512-by-512 pixels.
+- Reader and background-feed logic were not changed; the full reader instrumentation suite was not repeated for this visual update.
