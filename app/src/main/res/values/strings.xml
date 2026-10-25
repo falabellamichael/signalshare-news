@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SignalShare: News</string>
+    <string name="refresh_now">Refresh now</string>
+    <string name="refresh_queued">Refresh queued</string>
+</resources>

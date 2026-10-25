@@ -1,0 +1,22 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.nocturne.news'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'com.nocturne.news'
+        minSdk 33
+        targetSdk 36
+        versionCode 4
+        versionName '1.2.0'
+        testInstrumentationRunner 'com.nocturne.news.NewsSmokeInstrumentation'
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    buildTypes { release { minifyEnabled false } }
+}
+dependencies {
+    implementation 'androidx.wear.watchface:watchface-complications-data-source:1.2.1'
+    implementation 'androidx.wear:wear:1.4.0'
+    implementation 'androidx.wear:wear-remote-interactions:1.2.0'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'net.sf.kxml:kxml2:2.3.0'
+}

@@ -1,0 +1,18 @@
+SignalShare: News
+Copyright 2026 SignalShare: News contributors
+
+Application code is licensed under the Apache License, Version 2.0.
+
+This project includes the unmodified Roboto Regular font:
+Copyright 2011 The Roboto Project Authors
+https://github.com/googlefonts/roboto-classic
+Licensed under the SIL Open Font License, Version 1.1.
+See LICENSES/Roboto-OFL.txt and app/src/main/assets/licenses/Roboto-OFL.txt.
+
+The Gradle wrapper scripts and JAR are from the Gradle project and are
+distributed under the Apache License, Version 2.0. Their original notices
+are retained in the wrapper files.
+
+Third-party library and news content notices are described in
+THIRD_PARTY_NOTICES.md. News headlines and publisher names are not
+relicensed as application source code.

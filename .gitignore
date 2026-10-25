@@ -1,0 +1,28 @@
+# Local configuration and credentials
+local.properties
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+google-services.json
+
+# Generated files
+.gradle/
+.kotlin/
+**/build/
+captures/
+*.apk
+*.aab
+*.apks
+*.idsig
+*.log
+
+# Editors and OS
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+Desktop.ini
